@@ -1,0 +1,206 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Encabezados */
+h1, h2, h3, h4 {
+    color: #00ff7f;
+    text-align: center;
+}
+
+/* Estilo de las imágenes */
+img {
+    border: 2px solid #00ff7f;
+    margin: 20px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portada {
+    width: 70%;
+    height: auto;
+}
+
+#caballero, #cherry, #El\ Caballero, #hornet, #quirrel, #hollow {
+    width: 400px;
+    height: 300px;
+}
+
+/* Botón de enlace a Team Cherry */
+button {
+    background-color: #00ff7f;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: #009f5f;
+}
+
+/* Contenedor de personajes */
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de las cartas de los personajes */
+.character-card {
+    border: 2px solid #00ff7f;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #1a1a1a;
+    width: 600px;
+    text-align: center;
+}
+
+.character-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para la navegación horizontal */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+header #navegacion {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header #navegacion li {
+    margin: 0 15px;
+}
+
+header #navegacion li a {
+    text-decoration: none;
+    color: #00ff7f;
+}
+
+header #navegacion li a:hover {
+    color: #009f5f;
+}
+
+/* Animación de agua burbujeante */
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 150px;
+    background: url('https://i.imgur.com/e9KOR8t.png') no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+footer .bubble {
+    position: absolute;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #00ff7f;
+    border-radius: 50%;
+    animation: bubble 4s linear infinite;
+}
+
+footer .bubble:nth-child(1) {
+    left: 10%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+footer .bubble:nth-child(2) {
+    left: 20%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+footer .bubble:nth-child(3) {
+    left: 30%;
+    animation-duration: 4.5s;
+    animation-delay: 0.5s;
+}
+
+footer .bubble:nth-child(4) {
+    left: 40%;
+    animation-duration: 3.5s;
+    animation-delay: 3s;
+}
+
+footer .bubble:nth-child(5) {
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+footer .bubble:nth-child(6) {
+    left: 60%;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+}
+
+footer .bubble:nth-child(7) {
+    left: 70%;
+    animation-duration: 4.5s;
+    animation-delay: 2.5s;
+}
+
+footer .bubble:nth-child(8) {
+    left: 80%;
+    animation-duration: 3.5s;
+    animation-delay: 1s;
+}
+
+footer .bubble:nth-child(9) {
+    left: 90%;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+footer .bubble:nth-child(10) {
+    left: 95%;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+}

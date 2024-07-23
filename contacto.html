@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style_contacto.css">
+</head>
+<body>
+    <header>
+        <a href="https://tecnolochicas.mx/" target="_blank">
+            <img id="logo" src="https://tecnolochicas.mx/public/images/tecnolochicas-logo.png" alt="logo technolochicas">
+        </a>
+    </header>
+    <main id="contacto">
+        <h1 class="texto-centrado">Contáctame</h1>
+        <form action="" class="texto-centrado">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Tu nombre aquí">    
+                <label for="email">Correo electrónico:</label>
+                <input id="email" name="email" type="email" required placeholder="Tu correo aquí">
+            </div>
+            
+            <div>
+                <p>¿Cuál es tu lenguaje de programación favorito?</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <div class="botones">
+                <input type="reset" value="Resetear">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <h5>Hecho por Mayra (<i><a href="https://www.linkedin.com/in/maya-s%C3%A1nchez-mayra-edith-22a0a231b/">Perfil de LinkedIn</a></i>) en <b>Technolochicas PRO</b></h5>
+        <h6>
+            <a href="index.html">Página Principal</a>
+        </h6>
+    </footer>
+</body>
+</html>
